@@ -4,3 +4,5 @@
 *.sqlite3
 
 *.log
+
+spec/dummy/tmp/pids/server.pid
