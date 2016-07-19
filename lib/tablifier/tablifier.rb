@@ -8,7 +8,15 @@ module Tablifier
     end
 
     def self.tablify obj
-      @obj = obj
+      raise ArgumentError, "tablify is only implemented for Hash and ActiveRecord objects, not: '#{obj.class_name}'" unless obj.is_a?(Hash) || obj.is_a?(ActiveRecord::Base)
+      @class_name = obj.class.name
+      @h = if obj.is_a?(ActiveRecord::Base)
+        @obj_id = obj.id
+        @to_s = @obj.to_s
+        obj.attributes
+      else
+        obj.map{|k,v| [k.to_s,v]}.to_h
+      end
       instance.erb.result(binding).html_safe
     end
   end

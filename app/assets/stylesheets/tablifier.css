@@ -1,3 +1,94 @@
-body {
+table.tablifier {
+  border: 1px solid #DDDDDD;
+  width: auto;
+  border-spacing: 0;
+  border-collapse: collapse;
+  font-family: sans-serif;
+}
+
+table.tablifier > thead th {
+  padding: 5px;
+  text-align: left;
+}
+
+table.tablifier > thead th > div.obj-type > span {
+  font-size: 12px;
+}
+
+table.tablifier > thead th > div.obj-type > span > label {
+  font-weight: normal;
+}
+
+table.tablifier > thead th > div.obj-type > span > span.val {
+  background-color: #D9E4EA;
+  margin: 0px 10px 0px 5px;
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+
+table.tablifier > tbody > tr > td {
+  font-size: 12px;
+  padding: 2px;
+  text-align: left;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+
+table.tablifier > tbody > tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+
+table.tablifier > tbody > tr > td.attr-val {
+  font-family: monospace;
+}
+
+table.tablifier > tbody > tr > td.attr-val.nil {
+  font-family: inherit;
   color: red;
+  font-weight: bold;
+}
+
+table.tablifier > tbody > tr > td.attr-val.integer {
+  color: #4CB0DE;
+  font-weight: bold;
+}
+
+table.tablifier > tbody > tr > td.attr-val.boolean.false {
+  color: #A92424;
+  background-color: #FFEEF1;
+  font-weight: bold;
+}
+
+table.tablifier > tbody > tr > td.attr-val.boolean.true {
+  color: darkgreen;
+  background-color: #E9FDE9;
+  font-weight: bold;
+}
+
+table.tablifier > tbody > tr > td.attr-val.date {
+  color: #A548A3;
+}
+
+table.tablifier > tbody > tr > td.attr-val.date-time {
+  color: #828260;
+}
+
+table.tablifier > tbody > tr > td.attr-val.string {
+  font-family: inherit;
+  color: #6502A5;
+  font-weight: bold;
+}
+
+table.tablifier > tbody > tr > td.attr-val.float {
+  color: #708a42;
+  font-weight: bold;
+}
+
+table.tablifier > tbody > tr > td.attr-val.symbol {
+  color: #c7922f;
+}
+
+table.tablifier > tbody > tr > td.attr-val.symbol:before {
+  content: ':';
 }

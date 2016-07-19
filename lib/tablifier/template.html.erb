@@ -1,9 +1,42 @@
-<h1>tablify</h1>
-
-<pre><%= @obj.inspect %></pre>
-
-<p>
-  <%= h @obj.inspect %>
-</p>
-
-<pre><%= h '&' %></pre>
+<table class='tablifier'>
+  <thead>
+    <th colspan="2">
+      <%= @to_s if @to_s %>
+      <div class='obj-type'>
+        <span>
+          <label>Record Type:</label>
+          <span class='val'><%= @class_name %></span>
+        </span>
+        <% if @obj_id %>
+          <span>
+            <label>ID:</label>
+            <span class='val'><%= @obj_id %></span>
+          </span>
+        <% end %>
+      </div>
+    </th>
+  </thead>
+    <% @h.each do |k,v| %>
+      <tr>
+        <td><%= h k %></td>
+        <% if k.include?( 'encrypted' ) %>
+          <td class='attr-val'>&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;</td>
+        <% elsif v.nil? %>
+          <td class='attr-val nil'>nil</td>
+        <% elsif v.is_a?( Date ) %>
+          <td class='attr-val date'><%= h v.strftime('%b %-d, %Y') %></td>
+        <% elsif v.is_a?( Integer ) %>
+          <td class='attr-val integer'><%= v %></td>
+        <% elsif v.is_a?( Time ) %>
+          <td class='attr-val date-time'><%= h v.strftime('%b %-d, %Y; %l:%M%P (%Z)') %></td>
+        <% elsif v.is_a?( String ) %>
+          <td class='attr-val string'>&quot;<%= h v %>&quot;</td>
+        <% elsif [true, false].include?( v ) %>
+          <td class='attr-val boolean <%= v.to_s %>'><%= v ? 'True' : 'False' %></td>
+        <% else %>
+          <td class='attr-val <%= v.class.name.underscore %>'><%= v %></td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
