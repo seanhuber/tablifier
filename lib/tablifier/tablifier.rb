@@ -12,9 +12,11 @@ module Tablifier
       @class_name = obj.class.name
       @h = if obj.is_a?(ActiveRecord::Base)
         @obj_id = obj.id
-        @to_s = @obj.to_s
+        @to_s = obj.to_s
         obj.attributes
       else
+        @obj_id = nil
+        @to_s = nil
         obj.map{|k,v| [k.to_s,v]}.to_h
       end
       instance.erb.result(binding).html_safe
