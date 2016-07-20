@@ -1,12 +1,12 @@
 Gem::Specification.new do |s|
   s.name       = 'tablifier'
-  s.version    = '1.0.0'
+  s.version    = '1.1.0'
   s.authors    = ['Sean Huber']
   s.email      = 'seanhuber@seanhuber.com'
   s.homepage   = 'https://github.com/seanhuber/tablifier'
   s.summary    = 'Converts a hash or ActiveRecord object into an html string (table).'
   s.license    = 'MIT'
-  s.files      = ['lib/tablifier.rb'] + Dir['lib/*'] + Dir['app/assets/*']
+  s.files      = ['lib/tablifier.rb'] + Dir['lib/**/*'] + Dir['app/assets/**/*']
   s.test_files = Dir['spec/**/*']
 
   s.add_dependency 'actionview', '~> 4.1'

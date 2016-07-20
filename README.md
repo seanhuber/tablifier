@@ -18,7 +18,7 @@ Installation
 Add to your `Gemfile`:
 
 ```ruby
-gem 'tablifier', '~> 1.0'
+gem 'tablifier', '~> 1.1'
 ```
 
 Next, `bundle install`.  You can style generated tables yourself or use the included stylesheet (demonstrated in the above screenshot) by adding to `app/assets/stylesheets/application.css`:
