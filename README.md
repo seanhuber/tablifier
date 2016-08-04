@@ -1,7 +1,7 @@
 tablifier
 ==============
 
-`tablifer` provides an `ActionView` helper method that will generate an html table displaying the attributes of an `ActiveRecord` object or the key-value pairs of a `Hash`.
+`tablifer` provides an `ActionView` helper method that will generate an html table displaying the attributes of an `ActiveRecord` (or `ApplicationRecord`) object or the key-value pairs of a `Hash`.
 
 ![Screenshot](https://cdn.rawgit.com/seanhuber/tablifier/master/screenshot.png)
 
@@ -9,7 +9,7 @@ tablifier
 Requirements and Dependencies
 -----------------------------
 
-Ruby version >= 2.0.  This gem was written with Rails in mind, but the only real requirements are `ActionView` and `Railties`.  It's been tested with versions `~> 4.1`, but will likely work with older versions of these gems as wells as 5.0+.
+Ruby version >= 2.0.  This gem was written with Rails in mind, but the only real requirements are `ActionView` and `Railties`.  It's been tested with `ActiveRecord` versions `~> 4.1` as well as `ApplicationRecord` for Rails 5.
 
 
 Installation
