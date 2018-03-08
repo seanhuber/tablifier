@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name       = 'tablifier'
-  s.version    = '1.1.1'
+  s.version    = '1.1.2'
   s.authors    = ['Sean Huber']
   s.email      = 'seanhuber@seanhuber.com'
   s.homepage   = 'https://github.com/seanhuber/tablifier'
