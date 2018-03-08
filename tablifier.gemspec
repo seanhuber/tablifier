@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name       = 'tablifier'
-  s.version    = '1.1.1'
+  s.version    = '1.1.2'
   s.authors    = ['Sean Huber']
   s.email      = 'seanhuber@seanhuber.com'
   s.homepage   = 'https://github.com/seanhuber/tablifier'
@@ -15,4 +15,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rspec-rails'
   s.add_development_dependency 'rails', '~> 4.1'
   s.add_development_dependency 'sqlite3', '~> 1.3'
+  s.add_development_dependency 'coveralls', '~> 0.8'
 end

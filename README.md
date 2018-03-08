@@ -1,3 +1,7 @@
+[![Gem Version](https://badge.fury.io/rb/tablifier.svg)](https://badge.fury.io/rb/tablifier)
+[![Build Status](https://travis-ci.org/seanhuber/tablifier.svg?branch=master)](https://travis-ci.org/seanhuber/tablifier)
+[![Coverage Status](https://coveralls.io/repos/github/seanhuber/tablifier/badge.svg?branch=master)](https://coveralls.io/github/seanhuber/tablifier?branch=master)
+
 tablifier
 ==============
 
