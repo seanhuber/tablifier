@@ -1,4 +1,5 @@
 [![Gem Version](https://badge.fury.io/rb/tablifier.svg)](https://badge.fury.io/rb/tablifier)
+[![Build Status](https://travis-ci.org/seanhuber/tablifier.svg?branch=master)](https://travis-ci.org/seanhuber/tablifier)
 
 tablifier
 ==============
