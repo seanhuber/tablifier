@@ -6,3 +6,5 @@
 *.log
 
 spec/dummy/tmp/pids/server.pid
+coverage/
+/pkg/

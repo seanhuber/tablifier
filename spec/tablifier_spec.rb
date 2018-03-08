@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe Tablifier do
   it 'should be able to generate html tables for a Hash' do
