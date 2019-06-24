@@ -7,7 +7,7 @@ tablifier
 
 `tablifer` provides an `ActionView` helper method that will generate an html table displaying the attributes of an `ActiveRecord` (or `ApplicationRecord`) object or the key-value pairs of a `Hash`.
 
-![Screenshot](https://cdn.rawgit.com/seanhuber/tablifier/master/screenshot.png)
+![Screenshot](https://github.com/seanhuber/tablifier/blob/master/screenshot.png)
 
 
 Requirements and Dependencies
